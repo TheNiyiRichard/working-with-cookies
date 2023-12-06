@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Adeniyi Richard">
+    <link rel="stylesheet" href="./assets/style/index.css" />
+    <title>Cookies consent</title>
+    <script src="./assets/script/index.js" type="module"></script>
+</head>
+<body>
+  <div class="hero-banner">
+    <div class="hero-content">
+      <h1 class="hero-paragraph">
+        A cookie is a small piece of text sent to your browser by a website you can visit. It helps the site remember information about your visit, which can make it easier to visit again and make the site more useful to you.
+        Cookies are part of the HTTP protocol. They are usually set by a web-server using the response 'Set-Cookie' HTTP header.
+      </h1>
+    </div>
+  </div>
+
+  <div id="cookie-modal" class="modal">
+    <div class="modal-content">
+      <p>This website uses cookies to enhance the user experience. Click "Accept All" to allow all cookies or 
+        "Settings" to customize your preferences.</p>
+      <button onclick="acceptAllCookies()">Accept All</button>
+      <button onclick="showSettings()">Settings</button>
+    </div>
+  </div>
+
+  <div id="settings-modal" class="modal">
+    <div class="modal-content">
+      <p>Settings</p>
+
+
+      <div class="setting-option">
+
+        <div><label for="browserCheckbox">Browser</label></div>
+
+        <div>
+            <label class="toggle-switch">
+              <input type="checkbox" checked id="browserCheckbox">
+              <span class="slider"></span>
+            </label>
+        </div>
+
+      </div>
+
+
+      <div class="setting-option">
+        <label for="osCheckbox">Operating System</label>
+        <label class="toggle-switch">
+          <input type="checkbox" checked id="osCheckbox">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="setting-option">
+        <label for="widthCheckbox">Screen Width</label>
+        <label class="toggle-switch">
+          <input type="checkbox" checked id="widthCheckbox">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <div class="setting-option">
+        <label for="heightCheckbox">Screen Height</label>
+        <label class="toggle-switch">
+          <input type="checkbox" checked id="heightCheckbox">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <button onclick="saveSettings()">Save Settings</button>
+    </div>
+  </div>
+</body>
+</html>

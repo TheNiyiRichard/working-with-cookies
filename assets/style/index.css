@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    transition: background-color 0.5s, color 0.5s;
+  }
+  
+  .hero-banner {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1701822839967-06308ce8f99c?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    z-index: -1;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0 / 0.5)
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .settings-modal {
+    display: none;
+    width: 250px;
+  }
+  
+  .toggle-switch {
+    position: relative;
+    display: inline-block !important;
+    width: 40px;
+    height: 20px;
+    float: right;
+  }
+  
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 20px;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: '';
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196f3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(20px);
+  }
+  
+  button {
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .button-control {
+    display:flex;
+    justify-content: center;
+  }
+  
+  button:hover {
+    background-color: #0b7dda;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .setting-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  

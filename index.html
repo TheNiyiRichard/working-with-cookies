@@ -6,7 +6,7 @@
     <meta name="author" content="Adeniyi Richard">
     <link rel="stylesheet" href="./assets/style/index.css" />
     <title>Cookies consent</title>
-    <script src="./assets/script/index.js" type="module"></script>
+    <script src="./assets/script/index.js" defer></script>
 </head>
 <body>
   <div class="hero-banner">
@@ -23,13 +23,13 @@
       <p>This website uses cookies to enhance the user experience. Click "Accept All" to allow all cookies or 
         "Settings" to customize your preferences.</p>
       <button onclick="acceptAllCookies()">Accept All</button>
-      <button onclick="showSettings()">Settings</button>
+      <button class="mybutton" onclick="showSettings()">Settings</button>
     </div>
   </div>
 
   <div id="settings-modal" class="modal">
     <div class="modal-content">
-      <p>Settings</p>
+      <h3>Settings</h3>
 
 
       <div class="setting-option">

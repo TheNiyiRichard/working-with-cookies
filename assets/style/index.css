@@ -24,6 +24,10 @@ body {
     font-size: 1.5rem;
     z-index: -1;
   }
+
+  h3 {
+    font-size: large;
+  }
   
   .modal {
     display: none;
@@ -53,7 +57,7 @@ body {
     display: inline-block !important;
     width: 40px;
     height: 20px;
-    float: right;
+    /* float: right; */
   }
   
   .toggle-switch input {
@@ -101,7 +105,7 @@ body {
     background-color: #2196f3;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
   }
   
   .button-control {
@@ -111,6 +115,20 @@ body {
   
   button:hover {
     background-color: #0b7dda;
+  }
+
+  .mybutton {
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color:#09f1f12e;
+    color: #2196f3;
+    border: none;
+    border-radius: 20px;
+  }
+
+  .mybutton:hover {
+    background-color: #00ffff8a;
   }
   
   label {
